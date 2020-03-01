@@ -1,6 +1,6 @@
 # MyNutrition
 
-> MyNutriton.com Web Application
+> MyNutrition.com Web Application
 
 ## Build Setup
 

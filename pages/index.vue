@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">MyNutrition</h1>
-      <h2 class="subtitle">MyNutriton.com Web Application</h2>
+      <h2 class="subtitle">MyNutrition.com Web Application</h2>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 {
-  "name": "MyNutrition",
+  "name": "nynutrition",
   "version": "1.0.0",
-  "description": "MyNutriton.com Web Application",
+  "description": "MyNutrition.com Web Application",
   "author": "David Smith",
   "private": true,
   "scripts": {
