@@ -1,10 +1,10 @@
 # MyNutrition
 
-> MyNutriiton.com Web Application
+> MyNutriton.com Web Application
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 

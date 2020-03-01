@@ -1,9 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <logo />
       <h1 class="title">MyNutrition</h1>
-      <h2 class="subtitle">MyNutriiton.com Web Application</h2>
+      <h2 class="subtitle">MyNutriton.com Web Application</h2>
     </div>
   </div>
 </template>
