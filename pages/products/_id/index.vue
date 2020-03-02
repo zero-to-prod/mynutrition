@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">MyNutrition.com</h1>
-      <h2 class="subtitle">Nutrition Reinvented.</h2>
-      <nuxt-link to="products">Products</nuxt-link>
+      <h1 class="title">Product ID: {{ $route.params.id }}</h1>
     </div>
   </div>
 </template>
@@ -12,6 +10,10 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  validate(data) {
+    console.log(data)
+    return data.params.id == 2
+  },
   components: {
     Logo
   }
