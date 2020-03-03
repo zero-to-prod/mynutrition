@@ -59,6 +59,11 @@ export default {
     toggleMainNav() {
       this.main_nav_visible = !this.main_nav_visible
     }
+  },
+  watch: {
+    $route(to, from) {
+      this.main_nav_visible = false
+    }
   }
 }
 </script>
