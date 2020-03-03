@@ -23,17 +23,17 @@
 
     <div :class="main_nav_visible ? 'block' : 'hidden'" class="px-2 pt-2 pb-6">
       <nuxt-link
-        to="products"
+        to="/products"
         class="block text-gray-100 hover:bg-gray-800 px-2 rounded text-center py-4"
         >Products</nuxt-link
       >
       <nuxt-link
-        to="products"
+        to="/products"
         class="block text-gray-100 hover:bg-gray-800 px-2 rounded  text-center mt-1 py-4"
         >Products</nuxt-link
       >
       <nuxt-link
-        to="products"
+        to="/products"
         class="block text-gray-100 hover:bg-gray-800 px-2 rounded  text-center mt-1 py-4"
         >Products</nuxt-link
       >
