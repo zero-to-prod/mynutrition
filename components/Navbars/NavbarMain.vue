@@ -1,42 +1,54 @@
 <template>
   <header class="bg-gray-900">
-    <div class="flex items-center justify-between align-items-center py-3 px-2">
-      <nuxt-link to="/" class="w-1/3"
-        ><TextLogo config="NavbarMain"
-      /></nuxt-link>
-      <div class="text-gray-100 w-1/3 text-center">
-        <nuxt-link to="products" class="text-xl">Products</nuxt-link>
+    <div
+      class="sm:flex items-center justify-between align-items-center py-3 px-2"
+    >
+      <div class="flex justify-between sm:w-1/3 ">
+        <nuxt-link to="/" class="sm:block py-2"
+          ><TextLogo config="NavbarMain"
+        /></nuxt-link>
+        <div class="sm:hidden py-2">
+          <ButtonHamburger
+            v-show="!main_nav_visible"
+            type="button"
+            v-on:click.native="toggleMainNav"
+            class="flex justify-end"
+          />
+          <ButtonClose
+            v-show="main_nav_visible"
+            type="button"
+            v-on:click.native="toggleMainNav"
+            class="flex justify-end"
+          />
+        </div>
       </div>
-      <ButtonHamburger
-        v-show="!main_nav_visible"
-        type="button"
-        v-on:click.native="toggleMainNav"
-        class="w-1/3 flex justify-end"
-      />
-      <ButtonClose
-        v-show="main_nav_visible"
-        type="button"
-        v-on:click.native="toggleMainNav"
-        class="w-1/3 flex justify-end"
-      />
-    </div>
 
-    <div :class="main_nav_visible ? 'block' : 'hidden'" class="px-2 pt-2 pb-6">
-      <nuxt-link
-        to="/products"
-        class="block text-gray-100 hover:bg-gray-800 px-2 rounded text-center py-4"
-        >Products</nuxt-link
-      >
-      <nuxt-link
-        to="/products"
-        class="block text-gray-100 hover:bg-gray-800 px-2 rounded  text-center mt-1 py-4"
-        >Products</nuxt-link
-      >
-      <nuxt-link
-        to="/products"
-        class="block text-gray-100 hover:bg-gray-800 px-2 rounded  text-center mt-1 py-4"
-        >Products</nuxt-link
-      >
+      <div class="text-gray-100 text-center">
+        <div
+          :class="main_nav_visible ? 'block' : 'hidden'"
+          class="sm:block sm:flex text-center"
+        >
+          <nuxt-link
+            to="/products"
+            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center mt-1 sm:py-2 py-4"
+            >Products</nuxt-link
+          >
+          <nuxt-link
+            to="/products"
+            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center mt-1 sm:py-2 py-4"
+            >Kits</nuxt-link
+          >
+          <nuxt-link
+            to="/products"
+            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center mt-1 sm:py-2 py-4"
+            >Subscriptions</nuxt-link
+          >
+        </div>
+      </div>
+      <div
+        class="w-1/3 sm:block"
+        :class="main_nav_visible ? 'hidden' : 'block'"
+      ></div>
     </div>
   </header>
 </template>
