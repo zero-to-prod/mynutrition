@@ -2,7 +2,7 @@
   <header
     class="bg-gray-900 flex items-center justify-between align-items-center py-1 px-1"
   >
-    <a href="/" class="w-1/3"><TextLogo config="NavbarMain"/></a>
+    <nuxt-link to="/" class="w-1/3"><TextLogo config="NavbarMain"/></nuxt-link>
     <div class="text-gray-100 w-1/3 text-center">
       <nuxt-link to="products">Products</nuxt-link>
     </div>
