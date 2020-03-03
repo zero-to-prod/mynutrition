@@ -1,14 +1,14 @@
 <template>
-  <div class="container m-auto">
-    <Brand></Brand>
+  <div>
+    <TextLogo />
   </div>
 </template>
 
 <script>
-import Brand from '~/components/Brand.vue'
+import TextLogo from '~/components/TextLogo/Full.vue'
 export default {
   components: {
-    Brand
+    TextLogo: TextLogo
   }
 }
 </script>
