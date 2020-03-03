@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavbarMain />
     <div class="text-center">
       <TextLogo />
     </div>
