@@ -1,14 +1,19 @@
 <template>
   <div>
-    <TextLogo />
+    <NavbarMain />
+    <div class="text-center">
+      <TextLogo />
+    </div>
   </div>
 </template>
 
 <script>
-import TextLogo from '~/components/TextLogo/Full.vue'
+import TextLogo from '~/components/TextLogo/TextLogoFull.vue'
+import NavbarMain from '~/components/Navbars/NavbarMain.vue'
 export default {
   components: {
-    TextLogo: TextLogo
+    TextLogo,
+    NavbarMain
   }
 }
 </script>

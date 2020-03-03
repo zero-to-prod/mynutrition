@@ -7,15 +7,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
   validate(data) {
     console.log(data)
     return data.params.id == 2
-  },
-  components: {
-    Logo
   }
 }
 </script>
