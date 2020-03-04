@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h1 class="text-5xl text-center">Product Page</h1>
+      <h1 class="text-5xl text-center font-light">Product Page</h1>
     </div>
     <div class="hidden">
       <label>

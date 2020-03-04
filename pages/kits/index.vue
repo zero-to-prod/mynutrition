@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1 class="text-5xl text-center">Kits Page</h1>
+    <h1 class="text-5xl text-center font-light">Kits Page</h1>
   </div>
 </template>
