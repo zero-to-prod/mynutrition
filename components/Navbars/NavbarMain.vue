@@ -30,17 +30,17 @@
         >
           <nuxt-link
             to="/products"
-            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center mt-1 sm:py-2 py-4"
+            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4"
             >Products</nuxt-link
           >
           <nuxt-link
             to="/products"
-            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center mt-1 sm:py-2 py-4"
+            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4"
             >Kits</nuxt-link
           >
           <nuxt-link
             to="/products"
-            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center mt-1 sm:py-2 py-4"
+            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4"
             >Subscriptions</nuxt-link
           >
         </div>
