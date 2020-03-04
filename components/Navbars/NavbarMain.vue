@@ -1,5 +1,7 @@
 <template>
-  <header class="hover:shadow-md text-gray-900 transition duration-150">
+  <header
+    class="hover:shadow-md sm:shadow-none shadow-md text-gray-900 transition duration-150"
+  >
     <div
       class="sm:flex items-center justify-between align-items-center py-2 px-2"
     >
