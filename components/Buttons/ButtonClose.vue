@@ -4,7 +4,7 @@
       type="button"
       class="block text-gray-500 hover:text-gray-600 focus:text-white focus:outline-none"
     >
-      <IconClose class="hover:bg-gray-300 rounded" />
+      <IconClose />
     </button></div
 ></template>
 <script>

@@ -9,7 +9,7 @@
         <nuxt-link to="/" class="sm:block py-2"
           ><TextLogo config="NavbarMain"
         /></nuxt-link>
-        <div class="sm:hidden flex mb-2">
+        <div class="sm:hidden flex mb-2 hover:bg-gray-300 rounded p-2">
           <ButtonHamburger
             v-show="!main_nav_visible"
             type="button"
