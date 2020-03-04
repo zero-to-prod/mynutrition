@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-900 shadow-md">
+  <header class="hover:shadow-md text-gray-900 transition duration-150">
     <div
       class="sm:flex items-center justify-between align-items-center py-2 px-2"
     >
@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <div class="text-gray-100 text-center">
+      <div class="text-center">
         <div
           :class="main_nav_visible ? 'block' : 'hidden'"
           class="sm:block sm:flex text-center"
@@ -58,7 +58,7 @@ export default {
     return {
       main_nav_visible: false,
       class_link:
-        'block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4'
+        'transform hover:scale-110 block transition duration-150 hover:bg-gray-300 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4'
     }
   },
   mounted() {

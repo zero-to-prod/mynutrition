@@ -18,8 +18,7 @@ export default {
       configurations: {
         Default:
           'text-5xl font-light tracking-tight leading-tight text-gray-900',
-        NavbarMain:
-          'text-2xl font-light tracking-tight leading-tight text-white'
+        NavbarMain: 'text-2xl font-light tracking-tight leading-tight'
       }
     }
   },

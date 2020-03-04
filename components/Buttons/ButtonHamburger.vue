@@ -2,9 +2,9 @@
   <div>
     <button
       type="button"
-      class="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+      class="block text-gray-500 hover:text-gray-600 focus:text-white focus:outline-none"
     >
-      <IconHamburger class="hover:bg-gray-800 rounded" />
+      <IconHamburger class="hover:bg-gray-300 rounded" />
     </button></div
 ></template>
 <script>
