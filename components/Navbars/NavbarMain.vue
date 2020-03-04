@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-900">
+  <header class="bg-gray-900 shadow-md">
     <div
       class="sm:flex items-center justify-between align-items-center py-2 px-2"
     >
@@ -60,6 +60,13 @@ export default {
       class_link:
         'block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4'
     }
+  },
+  mounted() {
+    document.addEventListener('keydown', e => {
+      if (e.keyCode === 27) {
+        this.main_nav_visible = false
+      }
+    })
   },
   methods: {
     toggleMainNav() {
