@@ -3,7 +3,7 @@
     class="hover:shadow-md sm:shadow-none shadow-md text-gray-900 transition duration-150"
   >
     <div
-      class="sm:flex items-center justify-between align-items-center pb-0 sm:py2 px-2"
+      class="sm:flex items-center justify-between align-items-center py-2 sm:py2 px-2"
     >
       <div class="flex justify-between sm:w-1/3 ">
         <nuxt-link to="/" class="sm:block py-2"
