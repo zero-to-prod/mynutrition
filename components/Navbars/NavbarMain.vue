@@ -4,7 +4,7 @@
       class="sm:flex items-center justify-between align-items-center py-3 px-2"
     >
       <div class="flex justify-between sm:w-1/3 ">
-        <nuxt-link to="/" class="sm:block py-2"
+        <nuxt-link to="/" class="sm:block py-1"
           ><TextLogo config="NavbarMain"
         /></nuxt-link>
         <div class="sm:hidden py-2">
@@ -28,19 +28,9 @@
           :class="main_nav_visible ? 'block' : 'hidden'"
           class="sm:block sm:flex text-center"
         >
-          <nuxt-link
-            to="/products"
-            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4"
-            >Products</nuxt-link
-          >
-          <nuxt-link
-            to="/products"
-            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4"
-            >Kits</nuxt-link
-          >
-          <nuxt-link
-            to="/products"
-            class="block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4"
+          <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
+          <nuxt-link to="/products" :class="class_link">Kits</nuxt-link>
+          <nuxt-link to="/products" :class="class_link"
             >Subscriptions</nuxt-link
           >
         </div>
@@ -65,7 +55,11 @@ export default {
     ButtonClose
   },
   data() {
-    return { main_nav_visible: false }
+    return {
+      main_nav_visible: false,
+      class_link:
+        'block text-gray-100 hover:bg-gray-800 sm:px-1 sm:px-4 px-2 rounded text-center sm:py-2 py-4'
+    }
   },
   methods: {
     toggleMainNav() {
