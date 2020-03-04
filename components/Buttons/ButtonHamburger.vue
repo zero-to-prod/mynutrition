@@ -1,10 +1,10 @@
 <template>
-  <div class="hover:bg-gray-800 rounded">
+  <div>
     <button
       type="button"
       class="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
     >
-      <IconHamburger />
+      <IconHamburger class="hover:bg-gray-800 rounded" />
     </button></div
 ></template>
 <script>
