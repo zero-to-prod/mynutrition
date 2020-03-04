@@ -4,10 +4,10 @@
       class="sm:flex items-center justify-between align-items-center py-3 px-2"
     >
       <div class="flex justify-between sm:w-1/3 ">
-        <nuxt-link to="/" class="sm:block py-1"
+        <nuxt-link to="/" class="sm:block py-2"
           ><TextLogo config="NavbarMain"
         /></nuxt-link>
-        <div class="sm:hidden py-2">
+        <div class="sm:hidden py-1">
           <ButtonHamburger
             v-show="!main_nav_visible"
             type="button"
