@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <div>
     <div>
-      <h1 class="title">Product Page</h1>
+      <h1 class="text-5xl text-center">Product Page</h1>
     </div>
-    <div>
+    <div class="hidden">
       <label>
         <input type="text" v-model="product_id" />
       </label>

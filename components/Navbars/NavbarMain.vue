@@ -29,8 +29,8 @@
           class="sm:block sm:flex text-center"
         >
           <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
-          <nuxt-link to="/products" :class="class_link">Kits</nuxt-link>
-          <nuxt-link to="/products" :class="class_link"
+          <nuxt-link to="/kits" :class="class_link">Kits</nuxt-link>
+          <nuxt-link to="/subscriptions" :class="class_link"
             >Subscriptions</nuxt-link
           >
         </div>
