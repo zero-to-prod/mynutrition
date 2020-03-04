@@ -1,7 +1,7 @@
 <template>
   <header class="bg-gray-900">
     <div
-      class="sm:flex items-center justify-between align-items-center py-3 px-2"
+      class="sm:flex items-center justify-between align-items-center py-2 px-2"
     >
       <div class="flex justify-between sm:w-1/3 ">
         <nuxt-link to="/" class="sm:block py-2"
