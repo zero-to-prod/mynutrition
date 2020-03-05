@@ -12,7 +12,8 @@ export default {
   },
   head: {
     bodyAttrs: {
-      class: 'bg-gray-100'
+      class: 'bg-gray-100',
+      contentType: 'text/html; charset=UTF-8'
     }
   }
 };
