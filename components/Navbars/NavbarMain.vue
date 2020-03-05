@@ -2,7 +2,7 @@
   <header
     class="items-center hover:shadow-md hover:bg-gray-100 sm:shadow-md text-gray-900 transition duration-150 sm:block flex justify-between p-3"
   >
-    <div class="items-center w-1/3 sm:w-full">
+    <div class="items-center w-1/8 sm:w-full">
       <div class="sm:flex sm:justify-between items-center m-auto">
         <nuxt-link to="/" class=""
           ><TextLogo config="NavbarMain" class="text-gray-600"
@@ -26,15 +26,15 @@
 
     <div
       :class="main_nav_visible ? 'sm:block' : 'sm:hidden'"
-      class="justify-center items-center flex w-1/3 sm:w-full"
+      class="justify-center items-center flex sm:w-full"
     >
       <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
-      <nuxt-link to="/kits" :class="class_link">Kits</nuxt-link>
+      <nuxt-link to="/order" :class="class_link">Custom PRE-WORKOUT</nuxt-link>
       <nuxt-link to="/subscriptions" :class="class_link"
         >Subscriptions</nuxt-link
       >
     </div>
-    <div class="sm:hidden w-1/3"></div>
+    <div class="sm:hidden w-1/8"></div>
   </header>
 </template>
 
