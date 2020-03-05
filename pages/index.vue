@@ -2,13 +2,9 @@
   <div
     class="sm:text-center p-6 sm:p-2 pt-20 banner bg-center bg-cover bg-no-repeat h-screen"
   >
-    <div class="inline-block my-20 sm:mt-10">
+    <div class="inline-block my-20 sm:mt-10 max-w-5xl m-auto">
       <TextLogo class="bg-gray-200 p-4 pt-0 rounded-lg transform sm:scale-75" />
-      <button
-        class="bg-blue-700 transform sm:scale-90 text-gray-100 p-4 shadow-md rounded-lg my-10 text-xl hover:shadow-lg hover:bg-blue-600 transform hover:scale-105 transition duration-150 "
-      >
-        <nuxt-link to="/order">Custom PRE-WORKOUT</nuxt-link>
-      </button>
+      <ButtonCallToAction route="/order" buttonText="Customize PRE-WORKOUT" />
     </div>
   </div>
 </template>
@@ -16,10 +12,12 @@
 <script>
 import TextLogo from '~/components/TextLogo/TextLogoFull.vue';
 import NavbarMain from '~/components/Navbars/NavbarMain.vue';
+import ButtonCallToAction from '~/components/Buttons/ButtonCallToAction';
 export default {
   components: {
     TextLogo,
-    NavbarMain
+    NavbarMain,
+    ButtonCallToAction
   }
 };
 </script>

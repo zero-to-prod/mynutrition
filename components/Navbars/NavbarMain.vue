@@ -2,7 +2,7 @@
   <header
     class="items-center hover:shadow-md hover:bg-gray-100 sm:shadow-md text-gray-900 transition duration-150 sm:block flex justify-between p-3"
   >
-    <div class="items-center w-1/8 sm:w-full">
+    <div class="items-center w-32 sm:w-full">
       <div class="sm:flex sm:justify-between items-center m-auto">
         <nuxt-link to="/" class=""
           ><TextLogo config="NavbarMain" class="text-gray-600"
@@ -34,7 +34,7 @@
       >
       <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
     </div>
-    <div class="sm:hidden w-1/8"></div>
+    <div class="sm:hidden w-32 box-border"></div>
   </header>
 </template>
 
