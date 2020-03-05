@@ -2,8 +2,10 @@
   <div
     class="sm:text-center p-6 sm:p-2 pt-20 banner bg-center bg-cover bg-no-repeat h-screen"
   >
-    <div class="inline-block my-20 sm:mt-10 max-w-5xl m-auto">
-      <TextLogo class="bg-gray-200 p-4 pt-0 rounded-lg transform sm:scale-75" />
+    <div class="sm:mt-10 container mx-auto w-auto inline-block">
+      <TextLogo
+        class="inline-block bg-gray-200 p-4 pt-0 rounded-lg transform sm:scale-75"
+      />
       <ButtonCallToAction route="/order" buttonText="Customize PRE-WORKOUT" />
     </div>
   </div>

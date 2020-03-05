@@ -1,8 +1,7 @@
 <template>
   <div>
     <h1 :class="wrapper">
-      <span class="text-blue-700">My</span
-      ><span class="font-hairline">Prescription</span>
+      <span class="text-blue-700">My</span><span>Prescription</span>
     </h1>
   </div>
 </template>

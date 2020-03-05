@@ -18,6 +18,9 @@ module.exports = {
 
       xl: { max: '1279px' }
       // => @media (max-width: 1279px) { ... }
+    },
+    container: {
+      center: true
     }
   },
   variants: {},

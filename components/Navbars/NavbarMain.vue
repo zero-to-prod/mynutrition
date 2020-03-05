@@ -1,6 +1,6 @@
 <template>
   <header
-    class="items-center hover:shadow-md hover:bg-gray-100 sm:shadow-md text-gray-900 transition duration-150 sm:block flex justify-between p-3"
+    class="items-center hover:shadow-md hover:bg-gray-100 sm:shadow-md transition duration-150 sm:block flex justify-between p-3"
   >
     <div class="items-center w-32 sm:w-full">
       <div class="sm:flex sm:justify-between items-center m-auto">
@@ -53,7 +53,7 @@ export default {
     return {
       main_nav_visible: false,
       class_link:
-        'transform p-3 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
+        'transform p-3 text-gray-700 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
     };
   },
   mounted() {
