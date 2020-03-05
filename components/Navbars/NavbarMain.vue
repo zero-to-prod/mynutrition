@@ -1,9 +1,9 @@
 <template>
   <header
-    class="hover:shadow-md hover:bg-gray-100 sm:shadow-md text-gray-900 transition duration-150 sm:block flex justify-between p-3"
+    class="items-center hover:shadow-md hover:bg-gray-100 sm:shadow-md text-gray-900 transition duration-150 sm:block flex justify-between p-3"
   >
     <div class="items-center w-1/3 sm:w-full">
-      <div class="sm:flex sm:justify-between m-auto">
+      <div class="sm:flex sm:justify-between items-center m-auto">
         <nuxt-link to="/" class=""
           ><TextLogo config="NavbarMain" class="text-gray-600"
         /></nuxt-link>
@@ -34,10 +34,7 @@
         >Subscriptions</nuxt-link
       >
     </div>
-    <div
-      class="sm:hidden w-1/3"
-      :class="main_nav_visible ? 'hidden' : 'block'"
-    ></div>
+    <div class="sm:hidden w-1/3"></div>
   </header>
 </template>
 
@@ -56,7 +53,7 @@ export default {
     return {
       main_nav_visible: false,
       class_link:
-        'transform p-2 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
+        'transform p-3 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
     };
   },
   mounted() {
@@ -75,6 +72,9 @@ export default {
     $route(to, from) {
       this.main_nav_visible = false;
     }
+  },
+  onResize() {
+    this.windowHeight = window.innerHeight;
   }
 };
 </script>

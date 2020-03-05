@@ -9,5 +9,5 @@
 <script>
 export default {
   name: 'TextLogoTagline'
-}
+};
 </script>

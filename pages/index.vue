@@ -1,6 +1,8 @@
 <template>
-  <div class="absolute top-0 w-full" style="z-index: -1">
-    <div class="sm:text-center left-1 relative p-6 pt-20 banner h-full">
+  <div>
+    <div
+      class="sm:text-center left-1 relative p-6 pt-20 banner bg-local h-full"
+    >
       <TextLogo />
       <button
         class="bg-blue-700 text-gray-100 p-4 shadow-md rounded-lg my-10 text-xl hover:shadow-lg hover:bg-blue-600 transform hover:scale-105 transition duration-150 "
@@ -23,6 +25,6 @@ export default {
 </script>
 <style>
 .banner {
-  background: url('~assets/images/1.png') no-repeat bottom center;
+  background-image: url('~assets/images/1.png');
 }
 </style>
