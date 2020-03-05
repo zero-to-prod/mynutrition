@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import NavbarMain from '~/components/Navbars/NavbarMain.vue'
+import NavbarMain from '~/components/Navbars/NavbarMain.vue';
 export default {
   components: {
     NavbarMain
@@ -15,5 +15,5 @@ export default {
       class: 'bg-gray-100'
     }
   }
-}
+};
 </script>

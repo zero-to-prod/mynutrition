@@ -20,14 +20,14 @@ export default {
     return {
       configurations: {
         Default: 'text-5xl font-light text-gray-600',
-        NavbarMain: 'text-2xl font-light tracking-tight leading-tight'
+        NavbarMain: 'text-2xl font-light tracking-tight'
       }
-    }
+    };
   },
   computed: {
     wrapper() {
-      return this.configurations[this.config]
+      return this.configurations[this.config];
     }
   }
-}
+};
 </script>
