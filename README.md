@@ -1,6 +1,6 @@
-# MyNutrition
+# MyPrescription
 
-> MyNutrition.com Web Application
+> MyPrescription.com Web Application
 
 ## Build Setup
 

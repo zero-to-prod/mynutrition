@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 :class="wrapper"><span class="text-blue-700">My</span>Nutrition</h1>
+    <h1 :class="wrapper"><span class="text-blue-700">My</span>Prescription</h1>
   </div>
 </template>
 
@@ -16,8 +16,7 @@ export default {
   data() {
     return {
       configurations: {
-        Default:
-          'text-5xl font-light tracking-tight leading-tight text-gray-900',
+        Default: 'text-5xl font-light text-gray-600',
         NavbarMain: 'text-2xl font-light tracking-tight leading-tight'
       }
     }

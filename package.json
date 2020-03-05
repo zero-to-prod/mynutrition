@@ -1,7 +1,7 @@
 {
-  "name": "mynutrition",
+  "name": "myprescription",
   "version": "1.0.0",
-  "description": "Nutrition Reinvented",
+  "description": "Prescription Reinvented",
   "author": "David Smith",
   "private": true,
   "scripts": {

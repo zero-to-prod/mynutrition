@@ -7,7 +7,7 @@
     >
       <div class="flex justify-between sm:w-1/3 ">
         <nuxt-link to="/" class="sm:block py-2"
-          ><TextLogo config="NavbarMain"
+          ><TextLogo config="NavbarMain" class="text-gray-600"
         /></nuxt-link>
         <div class="sm:hidden flex mb-2 hover:bg-gray-300 rounded p-2">
           <ButtonHamburger
