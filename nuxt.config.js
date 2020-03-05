@@ -6,7 +6,8 @@ export default {
   head: {
     title: process.env.npm_package_name || '',
     meta: [
-      { charset: 'utf-8' },
+      { charset: 'UTF-8' },
+      { contentType: 'text/html' },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
@@ -60,4 +61,4 @@ export default {
      */
     extend(config, ctx) {}
   }
-}
+};

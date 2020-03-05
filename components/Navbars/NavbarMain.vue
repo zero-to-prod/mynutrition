@@ -28,11 +28,11 @@
       :class="main_nav_visible ? 'sm:block' : 'sm:hidden'"
       class="justify-center items-center flex sm:w-full"
     >
-      <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
       <nuxt-link to="/order" :class="class_link">Custom PRE-WORKOUT</nuxt-link>
       <nuxt-link to="/subscriptions" :class="class_link"
         >Subscriptions</nuxt-link
       >
+      <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
     </div>
     <div class="sm:hidden w-1/8"></div>
   </header>
