@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1 :class="wrapper"><span class="text-blue-700">My</span>Prescription</h1>
+    <h1 :class="wrapper">
+      <span class="text-blue-700">My</span
+      ><span class="font-hairline">Prescription</span>
+    </h1>
   </div>
 </template>
 
