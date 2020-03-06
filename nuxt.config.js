@@ -23,15 +23,15 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: false,
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/master.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/routes'],
+  plugins: ['~/plugins/routes', '@/plugins/Vue2TouchEvents'],
   /*
    ** Nuxt.js dev-modules
    */

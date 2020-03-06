@@ -1,5 +1,6 @@
 <template>
   <div
+    v-touch:swipe="swipeHandler"
     class="sm:text-center p-6 sm:p-2 pt-20 banner bg-center bg-cover bg-no-repeat h-screen"
   >
     <div class="sm:mt-10 container mx-auto w-auto inline-block">
@@ -20,6 +21,13 @@ export default {
     TextLogo,
     NavbarMain,
     ButtonCallToAction
+  },
+  methods: {
+    swipeHandler(direction) {
+      if (direction === 'left') {
+        this.$router.push('/order'); // May be left / right / top / bottom
+      }
+    }
   }
 };
 </script>

@@ -16,7 +16,8 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "nuxt": "^2.0.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "vue2-touch-events": "^2.2.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
