@@ -25,7 +25,7 @@ export default {
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {
-        this.$router.push('/order');
+        this.$router.push(this.route_order);
       }
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div v-touch:swipe="swipeHandler">
     <div>
-      <h1 class="text-5xl text-center font-light">Product Page</h1>
+      <h1 class="text-5xl text-center font-light h-screen">Product Page</h1>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {
-        this.$router.push('/');
+        this.$router.push(this.route_home);
       }
     }
   }
