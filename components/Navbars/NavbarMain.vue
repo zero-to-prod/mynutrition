@@ -28,19 +28,19 @@
     >
       <nuxt-link
         :to="route_order"
-        v-on:click.native="toggleMainNav"
+        v-on:click.native="main_nav_visible = false"
         :class="class_link"
         >PRE-WORKOUT</nuxt-link
       >
       <nuxt-link
         :to="route_subscriptions"
-        v-on:click.native="toggleMainNav"
+        v-on:click.native="main_nav_visible = false"
         :class="class_link"
         >Subscriptions</nuxt-link
       >
       <nuxt-link
         :to="route_products"
-        v-on:click.native="toggleMainNav"
+        v-on:click.native="main_nav_visible = false"
         :class="class_link"
         >Products</nuxt-link
       >
@@ -77,6 +77,11 @@ export default {
   methods: {
     toggleMainNav() {
       this.main_nav_visible = !this.main_nav_visible;
+    }
+  },
+  watch: {
+    $route(to, from) {
+      this.main_nav_visible = false;
     }
   }
 };
