@@ -27,14 +27,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/master.css'],
-  render: {
-    bundleRenderer: {
-      shouldPreload: (file, type) => {
-        return ['script', 'style', 'font'].includes(type);
-      }
-    }
-  },
+  css: ['@/assets/css/master.css'],
   /*
    ** Plugins to load before mounting the App
    */
