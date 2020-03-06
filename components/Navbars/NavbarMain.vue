@@ -1,9 +1,9 @@
 <template>
   <header
-    class="items-center hover:shadow-md hover:bg-gray-100 sm:shadow-md transition duration-150 sm:block flex justify-between p-3"
+    class="items-center hover:shadow-md sm:shadow-md transition duration-150 sm:block flex justify-around p-3"
   >
-    <div class="items-center w-32 sm:w-full">
-      <div class="sm:flex sm:justify-between items-center m-auto">
+    <div class="w-32 sm:w-full">
+      <div class="sm:flex sm:justify-between items-center">
         <nuxt-link :to="route_home" class=""
           ><TextLogo config="NavbarMain" class="text-gray-600"
         /></nuxt-link>
@@ -12,13 +12,11 @@
             v-show="!main_nav_visible"
             type="button"
             v-on:click.native="toggleMainNav"
-            class="flex justify-end"
           />
           <ButtonClose
             v-show="main_nav_visible"
             type="button"
             v-on:click.native="toggleMainNav"
-            class="flex justify-end"
           />
         </div>
       </div>
@@ -26,7 +24,7 @@
 
     <div
       :class="main_nav_visible ? 'sm:block' : 'sm:hidden'"
-      class="justify-center items-center flex sm:w-full"
+      class="flex text-center"
     >
       <nuxt-link
         :to="route_order"
@@ -47,7 +45,7 @@
         >Products</nuxt-link
       >
     </div>
-    <div class="sm:hidden w-32 box-border"></div>
+    <div class="sm:hidden w-32"></div>
   </header>
 </template>
 
@@ -66,7 +64,7 @@ export default {
     return {
       main_nav_visible: false,
       class_link:
-        'transform px-2 py-3 text-gray-700 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
+        'transform hover:scale-110 transition duration-150 rounded px-2 py-3 text-gray-700 sm:block hover:bg-gray-300'
     };
   },
   mounted() {
