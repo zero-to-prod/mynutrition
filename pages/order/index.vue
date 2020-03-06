@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  transition: 'default',
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {

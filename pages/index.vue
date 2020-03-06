@@ -17,6 +17,7 @@ import TextLogo from '~/components/TextLogo/TextLogoFull.vue';
 import NavbarMain from '~/components/Navbars/NavbarMain.vue';
 import ButtonCallToAction from '~/components/Buttons/ButtonCallToAction';
 export default {
+  transition: 'default',
   components: {
     TextLogo,
     NavbarMain,
