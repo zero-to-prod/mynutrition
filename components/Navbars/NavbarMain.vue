@@ -4,7 +4,7 @@
   >
     <div class="items-center w-32 sm:w-full">
       <div class="sm:flex sm:justify-between items-center m-auto">
-        <nuxt-link to="/" class=""
+        <nuxt-link :to="route_home" class=""
           ><TextLogo config="NavbarMain" class="text-gray-600"
         /></nuxt-link>
         <div class="hidden sm:flex hover:bg-gray-300 rounded p-2">
@@ -28,11 +28,24 @@
       :class="main_nav_visible ? 'sm:block' : 'sm:hidden'"
       class="justify-center items-center flex sm:w-full"
     >
-      <nuxt-link to="/order" :class="class_link">Custom PRE-WORKOUT</nuxt-link>
-      <nuxt-link to="/subscriptions" :class="class_link"
+      <nuxt-link
+        :to="route_order"
+        v-on:click.native="toggleMainNav"
+        :class="class_link"
+        >PRE-WORKOUT</nuxt-link
+      >
+      <nuxt-link
+        :to="route_subscriptions"
+        v-on:click.native="toggleMainNav"
+        :class="class_link"
         >Subscriptions</nuxt-link
       >
-      <nuxt-link to="/products" :class="class_link">Products</nuxt-link>
+      <nuxt-link
+        :to="route_products"
+        v-on:click.native="toggleMainNav"
+        :class="class_link"
+        >Products</nuxt-link
+      >
     </div>
     <div class="sm:hidden w-32 box-border"></div>
   </header>
@@ -53,7 +66,7 @@ export default {
     return {
       main_nav_visible: false,
       class_link:
-        'transform p-3 text-gray-700 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
+        'transform px-2 py-3 text-gray-700 hover:scale-110 block transition duration-150 hover:bg-gray-300 rounded text-center'
     };
   },
   mounted() {
@@ -67,14 +80,6 @@ export default {
     toggleMainNav() {
       this.main_nav_visible = !this.main_nav_visible;
     }
-  },
-  watch: {
-    $route(to, from) {
-      this.main_nav_visible = false;
-    }
-  },
-  onResize() {
-    this.windowHeight = window.innerHeight;
   }
 };
 </script>

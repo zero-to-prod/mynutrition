@@ -1,6 +1,6 @@
 <template>
-  <h2 class="text-2xl text-blue-700 tracking-widest leading-none">
-    pre-workout
+  <h2 class="text-2xl text-blue-700 tracking-wide leading-none">
+    PRE-WORKOUT
     <span class="text-gray-600"
       ><span class="text-gray-700">re</span>imagined</span
     >
