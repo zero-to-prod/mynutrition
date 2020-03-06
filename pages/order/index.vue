@@ -6,11 +6,10 @@
 
 <script>
 export default {
-  transition: 'default',
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {
-        this.$router.push('/subscriptions'); // May be left / right / top / bottom
+        this.$router.push('/subscriptions');
       }
     }
   }

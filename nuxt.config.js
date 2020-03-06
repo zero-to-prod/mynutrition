@@ -28,6 +28,13 @@ export default {
    ** Global CSS
    */
   css: ['~/assets/css/master.css'],
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type);
+      }
+    }
+  },
   /*
    ** Plugins to load before mounting the App
    */

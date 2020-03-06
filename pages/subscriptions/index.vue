@@ -9,7 +9,7 @@ export default {
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {
-        this.$router.push('/products'); // May be left / right / top / bottom
+        this.$router.push('/products');
       }
     }
   }

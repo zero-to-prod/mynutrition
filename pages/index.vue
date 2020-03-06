@@ -17,7 +17,6 @@ import TextLogo from '~/components/TextLogo/TextLogoFull.vue';
 import NavbarMain from '~/components/Navbars/NavbarMain.vue';
 import ButtonCallToAction from '~/components/Buttons/ButtonCallToAction';
 export default {
-  transition: 'default',
   components: {
     TextLogo,
     NavbarMain,
@@ -26,7 +25,7 @@ export default {
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {
-        this.$router.push('/order'); // May be left / right / top / bottom
+        this.$router.push('/order');
       }
     }
   }

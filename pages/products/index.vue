@@ -16,7 +16,7 @@ export default {
   methods: {
     swipeHandler(direction) {
       if (direction === 'left') {
-        this.$router.push('/'); // May be left / right / top / bottom
+        this.$router.push('/');
       }
     }
   }
