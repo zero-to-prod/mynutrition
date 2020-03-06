@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="page-leave-active page-leave-to"></div>
     <NavbarMain />
     <nuxt v-touch:swipe="swipeHandler" />
   </div>

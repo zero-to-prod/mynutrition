@@ -47,6 +47,14 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/auth'
   ],
+  purgeCSS: {
+    whitelist: [
+      'page-enter-active',
+      'page-leave-active',
+      'page-enter',
+      'page-leave-to'
+    ]
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -59,7 +67,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
-    css: ['~/assets/css/master.css']
+    extend(config, ctx) {}
   }
 };
