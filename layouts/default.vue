@@ -1,7 +1,10 @@
 <template>
   <div>
     <NavbarMain />
-    <nuxt v-touch:swipe="swipeHandler" />
+    <nuxt
+      v-touch:swipe="swipeHandler"
+      class="page-leave-active page-leave-to"
+    />
   </div>
 </template>
 <script>
