@@ -11,12 +11,12 @@
           <ButtonHamburger
             v-show="!main_nav_visible"
             type="button"
-            v-on:click.native="toggleMainNav"
+            v-on:click.native="toggleMainNavDropdown"
           />
           <ButtonClose
             v-show="main_nav_visible"
             type="button"
-            v-on:click.native="toggleMainNav"
+            v-on:click.native="toggleMainNavDropdown"
           />
         </div>
       </div>
@@ -28,19 +28,19 @@
     >
       <nuxt-link
         :to="route_order"
-        v-on:click.native="main_nav_visible = false"
+        v-on:click.native="closeMainNavDropdown"
         :class="class_link"
         >PRE-WORKOUT</nuxt-link
       >
       <nuxt-link
         :to="route_subscriptions"
-        v-on:click.native="main_nav_visible = false"
+        v-on:click.native="closeMainNavDropdown"
         :class="class_link"
         >Subscriptions</nuxt-link
       >
       <nuxt-link
         :to="route_products"
-        v-on:click.native="main_nav_visible = false"
+        v-on:click.native="closeMainNavDropdown"
         :class="class_link"
         >Products</nuxt-link
       >
@@ -70,18 +70,21 @@ export default {
   mounted() {
     document.addEventListener('keydown', e => {
       if (e.keyCode === 27) {
-        this.main_nav_visible = false;
+        this.closeMainNavDropdown();
       }
     });
   },
   methods: {
-    toggleMainNav() {
+    toggleMainNavDropdown() {
       this.main_nav_visible = !this.main_nav_visible;
+    },
+    closeMainNavDropdown() {
+      this.main_nav_visible = false;
     }
   },
   watch: {
     $route(to, from) {
-      this.main_nav_visible = false;
+      this.closeMainNavDropdown();
     }
   }
 };
