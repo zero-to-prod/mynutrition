@@ -1,7 +1,7 @@
 {
-  "name": "myprescription",
+  "name": "MyPrescription",
   "version": "1.0.0",
-  "description": "Prescription Reinvented",
+  "description": "PRE-WORKOUT reinvented",
   "author": "David Smith",
   "private": true,
   "scripts": {
