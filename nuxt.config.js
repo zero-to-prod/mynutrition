@@ -60,8 +60,6 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
-    extractCSS: {
-      allChunks: true
-    }
+    css: ['@/assets/css/master.css']
   }
 };
