@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     swipeHandler(direction) {
-      if (direction === 'left') {
+      if (direction === 'left' && this.isMobile) {
         this.$router.push(this.route_home);
       }
     }
