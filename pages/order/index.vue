@@ -8,8 +8,8 @@
 export default {
   methods: {
     swipeHandler(direction) {
-      if (direction === 'left' && this.isMobile) {
-        this.$router.push(this.route_products);
+      if (direction === 'left') {
+        this.$router.push(this.route_subscriptions);
       }
     }
   }
